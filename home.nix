@@ -23,6 +23,7 @@
     # pkgs.hello
     pkgs.vscode
     pkgs.discord
+    pkgs.unar
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -38,8 +39,7 @@
     # '')
   ];
 
-  nixpkgs.config.allowUnfree = true; 
-
+  nixpkgs.config.allowUnfree = true;
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
